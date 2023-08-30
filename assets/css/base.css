@@ -1,0 +1,112 @@
+:root {
+    --white-color: #fff;
+    --primary-color: #a82d49;
+    --heading-color: rgb(67, 18, 29);
+    --text-color: rgb(85, 85, 85);
+    --black-color: #000;
+}
+
+* {
+    margin: 0;
+    box-sizing: inherit;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-col-half {
+    width: 50%;
+
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.grid__col-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33.3334%;
+}
+
+.btn-num {
+    min-width: 140px;
+    height: 36px;
+    text-decoration: none;
+    border: 3px solid var(--primary-color);
+    font-size: 1.4rem;
+    padding: 0 10px;
+    color: var(--white-color);
+    font-weight: 300;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4rem;
+    background-color: var(--primary-color);
+
+}
+
+.btn-call:hover,
+.btn-num:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.btn-call {
+    min-width: 165px;
+    height: 50px;
+    text-decoration: none;
+    border: 3px solid var(--primary-color);
+    font-size: 1.4rem;
+    padding: 0 10px;
+    color: var(--white-color);
+    font-weight: 300;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4rem;
+    background-color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+.btn-no-border {
+    min-width: 165px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0 10px;
+    color: var(--black-color);
+    font-weight: 300;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-no-border:hover {
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+}
