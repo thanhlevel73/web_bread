@@ -74,7 +74,7 @@
 }
 
 .content__page-text {
-    min-width: 500px;
+    /* min-width: 500px; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -90,7 +90,7 @@
 .content__page-describe {
     font-size: 1.6rem;
     margin: 20px 0;
-    width: 400px;
+    /* width: 400px; */
     line-height: 1.6;
     color: var(--text-color);
 }
@@ -103,16 +103,20 @@
     margin-top: 100px;
 }
 
-.content__intro-2,
+/* .content__intro-2,
 .content__intro-1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 100px 0; */
+    
+}*/
+.content__intro-2--img {
+    width: 100%;
 }
 
 .content__intro-1--img {
     border-radius: 10px;
+    width: 100%;
 }
 
 .content__food-head h1,
@@ -129,15 +133,15 @@
 .content__intro-1-describe {
     font-size: 1.4rem;
     margin: 20px 0;
-    width: 400px;
+    /* width: 400px; */
     line-height: 1.6;
     color: var(--text-color);
 }
 
 
-.col-l-1 {
+/* .col-l-1 {
     margin: 0 0 80px 100px;
-}
+} */
 
 .content__intro-2-list {
     list-style: none;
@@ -171,8 +175,8 @@
 
 .content__food-title {
     font-size: 1.4rem;
-    width: 800px;
-    max-width: 100%;
+    /* width: 800px; */
+    /* max-width: 100%; */
     margin: 0 auto;
     line-height: 1.6;
     color: var(--text-color);
@@ -196,6 +200,7 @@
     will-change: tranform;
     text-align: center;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card:hover {

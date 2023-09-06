@@ -1,0 +1,34 @@
+@media (max-width:1023px) {}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px) {
+
+    .header__navbar img {
+        width: 10%;
+    }
+}
+
+/* mobile */
+@media (max-width:739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .content__intro-2-heading h1,
+    .content__intro-1-heading h1 {
+        font-size: 3.4rem;
+    }
+
+    .content__page-heading h1 {
+        font-size: 3.8rem;
+    }
+
+    .header__intro-btn-more {
+        margin: 0;
+    }
+
+    .header__navbar img {
+        width: 16%;
+    }
+
+}

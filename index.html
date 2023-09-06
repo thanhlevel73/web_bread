@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +18,19 @@
 <body>
     <div class="app">
         <div class="header">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="header__navbar">
 
                     <img src="./assets/img/bread-logo.webp" alt="" class="header__logo-link">
 
                     <ul class="header__list">
-                        <li class="header__list-item"><a href="#" class="header__list-item-link">Home</a></li>
-                        <li class="header__list-item"><a href="#Aboutus" class="header__list-item-link">About us</a>
+                        <li class="header__list-item hide-on-mobile"><a href="#" class="header__list-item-link">Home</a>
                         </li>
-                        <li class="header__list-item"><a href="#foods" class="header__list-item-link">Explore
+                        <li class="header__list-item hide-on-mobile"><a href="#Aboutus"
+                                class="header__list-item-link">About us</a>
+                        </li>
+                        <li class="header__list-item hide-on-mobile"><a href="#foods"
+                                class="header__list-item-link">Explore
                                 Foods</a>
                         </li>
                         <!-- <li class="header__list-item"><a href="" class="header__list-item-link">099999999</a></li> -->
@@ -41,9 +45,9 @@
         <div class="content">
 
             <div class="content__page">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="content__page-text">
-                        <div class="grid-col-half">
+                        <div class="col l-6 m-8 c-12">
                             <span class="content__page-heading">
                                 <h1>Good food choices</h1>
                                 <h1> are good</h1>
@@ -51,6 +55,7 @@
                             </span>
 
                             <p class="content__page-describe">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                <br>
                                 Neque labore sequi possimus laborum
 
                             </p>
@@ -77,14 +82,14 @@
 
 
             <div id="Aboutus" class="content__intro">
-                <div class="grid">
-                    <div class="content__intro-1">
-                        <div class="grid-col-half">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-7 m-12 c-12">
                             <img src="//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/foodera/d619bc82-1_0i50c3000000000000000.png"
-                                alt="" class="content__intro-1--img">
+                                alt="" class="content__intro-1--img ">
                         </div>
 
-                        <div class="grid-col-half col-l-1">
+                        <div class="col l-4 m-12 c-12 ">
                             <span class="content__intro-1-heading">
                                 <h1>We even give you more</h1>
                                 <h1>solutions to grow your</h1>
@@ -93,6 +98,7 @@
 
                             <p class="content__intro-1-describe">Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit.
+                                <br>
                                 Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus.
                             </p>
 
@@ -103,8 +109,8 @@
                         </div>
                     </div>
 
-                    <div class="content__intro-2">
-                        <div class="grid-col-half col-l-2">
+                    <div class="row content__intro-2">
+                        <div class="col l-4 m-12 c-12">
                             <span class="content__intro-2-heading">
                                 <h1>We even give you more</h1>
                                 <h1>solutions to grow your</h1>
@@ -138,7 +144,7 @@
 
                         </div>
 
-                        <div class="grid-col-half">
+                        <div class="col l-7 m-12">
                             <img src="//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/foodera/88bd381a-2_0i40i5000000000000000.png"
                                 alt="" class="content__intro-2--img">
                         </div>
@@ -151,131 +157,138 @@
 
 
             <div id="foods" class="content__foods">
-                <div class="grid">
+                <div class="grid wide">
+
                     <div class="content__food-head">
                         <h1 class="content__food-heading">
                             Explore Our Foods
                         </h1>
                         <p class="content__food-title">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                            bibendum in sit amet leo.
+                            <br>
+                            Mauris feugiat erat tellus. Far far away, behind the word
+                            mountains, far from the countries Vokalia and Consonantia,
+                            <br>
+                            there live the blind texts.
                             Separated they live in Bookmarksgrove.
                         </p>
                     </div>
 
-                    <div class="foods">
-                        <div class="grid__row">
-
-                            <div class="grid__col-3">
-
-                                <a href="#" class="card">
-
-                                    <img src="//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/foodera/ddc6dfb4-01_0ag07r000000000000000.jpg"
-                                        alt="" class="food__img">
-
-                                    <h3 class="food__name">
-                                        Rainbow Vegetable Sandwich
-                                    </h3>
-
-                                    <p class="food__title">
-                                        Time: 15 - 20 Minutes |Serves: 1
-                                    </p>
-
-                                    <div class="food__price">
-                                        <span class="food__price-new">$10.50</span>
-                                        <span class="food__price-old">$11.70</span>
-                                    </div>
-
-                                    <button class="food__btn btn-call">Order Now</button>
-
-                                </a>
-                            </div>
+                    <!-- <div class="foods "> -->
 
 
+                    <div class="row">
 
-                            <div class="grid__col-3">
-                                <a href="#" class="card">
+                        <div class="col l-4 m-6 c-12">
 
-                                    <img src="//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/foodera/48d17b50-02_0ai07r000000000000000.jpg"
-                                        alt="" class="food__img">
+                            <a class="card">
 
-                                    <h3 class="food__name">
-                                        Vegetarian Burger
-                                    </h3>
+                                <img src="//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/foodera/ddc6dfb4-01_0ag07r000000000000000.jpg"
+                                    alt="" class="food__img">
 
-                                    <p class="food__title">
-                                        Time: 30 - 45 Minutes |Serves: 1
-                                    </p>
+                                <h3 class="food__name">
+                                    Rainbow Vegetable Sandwich
+                                </h3>
 
-                                    <div class="food__price">
-                                        <span class="food__price-new">$9.20</span>
-                                        <span class="food__price-old">$10.50</span>
-                                    </div>
+                                <p class="food__title">
+                                    Time: 15 - 20 Minutes |Serves: 1
+                                </p>
 
-                                    <button class="food__btn btn-call">Order Now</button>
+                                <div class="food__price">
+                                    <span class="food__price-new">$10.50</span>
+                                    <span class="food__price-old">$11.70</span>
+                                </div>
 
-                                </a>
+                                <button class="food__btn btn-call">Order Now</button>
 
-                            </div>
-
-                            <div class="grid__col-3">
-
-
-                                <a href="#" class="card">
-
-                                    <img src="//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/foodera/8eda35b9-03_0aj07r000000000000000.png"
-                                        alt="" class="food__img">
-
-                                    <h3 class="food__name">
-                                        Raspberry Stuffed French Toast
-                                    </h3>
-
-                                    <p class="food__title">
-                                        Time: 10 - 15 Minutes | Serves: 1
-                                    </p>
-
-                                    <div class="food__price">
-                                        <span class="food__price-new">$12.50</span>
-                                        <span class="food__price-old">$13.20</span>
-                                    </div>
-
-                                    <button class="food__btn btn-call">Order Now</button>
-
-                                </a>
-
-                            </div>
-
-                            <div class="grid__col-3">
-
-                                <a class="card">
-
-                                    <img src="//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/foodera/ddc6dfb4-01_0ag07r000000000000000.jpg"
-                                        alt="" class="food__img">
-
-                                    <h3 class="food__name">
-                                        Rainbow Vegetable Sandwich
-                                    </h3>
-
-                                    <p class="food__title">
-                                        Time: 15 - 20 Minutes |Serves: 1
-                                    </p>
-
-                                    <div class="food__price">
-                                        <span class="food__price-new">$10.50</span>
-                                        <span class="food__price-old">$11.70</span>
-                                    </div>
-
-                                    <button class="food__btn btn-call">Order Now</button>
+                            </a>
+                        </div>
 
 
-                                </a>
-                            </div>
 
+                        <div class="col l-4 m-6 c-12">
+                            <a class="card">
 
+                                <img src="//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/foodera/48d17b50-02_0ai07r000000000000000.jpg"
+                                    alt="" class="food__img">
+
+                                <h3 class="food__name">
+                                    Vegetarian Burger
+                                </h3>
+
+                                <p class="food__title">
+                                    Time: 30 - 45 Minutes |Serves: 1
+                                </p>
+
+                                <div class="food__price">
+                                    <span class="food__price-new">$9.20</span>
+                                    <span class="food__price-old">$10.50</span>
+                                </div>
+
+                                <button class="food__btn btn-call">Order Now</button>
+
+                            </a>
 
                         </div>
+
+                        <div class="col l-4 m-6 c-12">
+
+                            <a class="card">
+
+                                <img src="//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/foodera/8eda35b9-03_0aj07r000000000000000.png"
+                                    alt="" class="food__img">
+
+                                <h3 class="food__name">
+                                    Raspberry Stuffed French Toast
+                                </h3>
+
+                                <p class="food__title">
+                                    Time: 10 - 15 Minutes | Serves: 1
+                                </p>
+
+                                <div class="food__price">
+                                    <span class="food__price-new">$12.50</span>
+                                    <span class="food__price-old">$13.20</span>
+                                </div>
+
+                                <button class="food__btn btn-call">Order Now</button>
+
+                            </a>
+
+                        </div>
+
+                        <div class="col l-4 m-6 c-12">
+
+                            <a class="card">
+
+                                <img src="//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/foodera/ddc6dfb4-01_0ag07r000000000000000.jpg"
+                                    alt="" class="food__img">
+
+                                <h3 class="food__name">
+                                    Rainbow Vegetable Sandwich
+                                </h3>
+
+                                <p class="food__title">
+                                    Time: 15 - 20 Minutes |Serves: 1
+                                </p>
+
+                                <div class="food__price">
+                                    <span class="food__price-new">$10.50</span>
+                                    <span class="food__price-old">$11.70</span>
+                                </div>
+
+                                <button class="food__btn btn-call">Order Now</button>
+
+
+                            </a>
+                        </div>
+
+
+
                     </div>
+
+                    <!-- </div> -->
 
                 </div>
 
